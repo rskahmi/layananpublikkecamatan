@@ -1,0 +1,70 @@
+<?php
+
+namespace App\Http\Controllers;
+use App\Traits\RulesTraits;
+use Exception;
+use Illuminate\Http\Request;
+use App\Models\RiwayatReimModel;
+use Illuminate\Support\Facades\Validator;
+use App\Http\RiwayatReimResouce;
+
+
+class RiwayatReimController extends Controller
+{
+    use RulesTraits;
+    public function store (Request $request){
+        try {
+            $validatedData = Validator::make($request->all(), [
+                'tindakan' => 'required|boolean',
+                'status' => 'required|string',
+                'peninjau' => 'required|string',
+                'alasan' => 'required',
+                'reim_id'  => 'required|exist:reim,id'
+            ], [
+                'tindakan.required' => $this->requiredMessage('tindakan'),
+                'status.required' => $this->requiredMessage('status'),
+                'peninjau.required' => $this->requiredMessage('peninjau'),
+                'alasan.required' => $this->requiredMessage('alasan'),
+                'reim_id.required' => $this->requiredMessage('reim_id'),
+                'reim_id.exists' => $this->existsMessage('reim_id'),
+            ]);
+
+            if ($validatedData->fails()) {
+                return redirect()->back()
+                    ->with(
+                        'alert',
+                        [
+                            'type' => 'error',
+                            'title' => 'Insert Data Riwayat',
+                            'text' => validatorError($validatedData->errors()->all())
+                        ]
+                    );
+            }
+
+            $validatedData = $validatedData->validated();
+
+            $riwayat_reim = RiwayatReimModel::create([
+                'tindakan' => $validatedData['tindakan'],
+                'status' => $validatedData['status'],
+                'peninjau' => $validatedData['peninjau'],
+                'alasan' => $validatedData['alasan'],
+                'reim_id' => $validatedData['reim_id'],
+                'user_id' => auth()->user()->id
+            ]);
+
+            return response()->json([
+                'message' => 'Data Berhasil Ditambahkan',
+                new RiwayatUMDResource($riwayat_umd)
+            ]);
+        } catch (Exception $e) {
+            return redirect()->back()->with(
+                'alert',
+                [
+                    'type' => 'error',
+                    'title' => 'Insert Riwayat Proposal',
+                    'text' => $e->getMessage()
+                ]
+            );
+        }
+    }
+}
