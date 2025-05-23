@@ -1,0 +1,131 @@
+/* Poppins */
+@font-face {
+    font-family: 'Poppins 100';
+    src: url('../fonts/poppins/100-Poppins-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 100 Italic';
+    src: url('../fonts/poppins/100-Poppins-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 200';
+    src: url('../fonts/poppins/200-Poppins-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 200 Italic';
+    src: url('../fonts/poppins/200-Poppins-ExtraLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 300';
+    src: url('../fonts/poppins/300-Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 300 Italic';
+    src: url('../fonts/poppins/300-Poppins-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 400';
+    src: url('../fonts/poppins/400-Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 500';
+    src: url('../fonts/poppins/500-Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 500 Italic';
+    src: url('../fonts/poppins/500-Poppins-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 600';
+    src: url('../fonts/poppins/600-Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 600 Italic';
+    src: url('../fonts/poppins/600-Poppins-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 700';
+    src: url('../fonts/poppins/700-Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 700 Italic';
+    src: url('../fonts/poppins/700-Poppins-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 800';
+    src: url('../fonts/poppins/800-Poppins-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 800 Italic';
+    src: url('../fonts/poppins/800-Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 900';
+    src: url('../fonts/poppins/900-Poppins-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins 900 Italic';
+    src: url('../fonts/poppins/900-Poppins-BlackItalic.ttf') format('truetype');
+}
+
+/* Inter */
+@font-face {
+    font-family: 'Inter 100';
+    src: url('../fonts/inter/100-Inter-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter 200';
+    src: url('../fonts/inter/200-Inter-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter 300';
+    src: url('../fonts/inter/300-Inter-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter 400';
+    src: url('../fonts/inter/400-Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter 500';
+    src: url('../fonts/inter/500-Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter 600';
+    src: url('../fonts/inter/600-Inter-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter 700';
+    src: url('../fonts/inter/700-Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter 800';
+    src: url('../fonts/inter/800-Inter-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter 900';
+    src: url('../fonts/inter/900-Inter-Black.ttf') format('truetype');
+}
